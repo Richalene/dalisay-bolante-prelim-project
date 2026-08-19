@@ -1,0 +1,11 @@
+2026-08-20 03:17:23 | INFO     | PIPELINE | Run started
+2026-08-20 03:17:23 | INFO     | EXTRACT | Connecting to source ledger: c:\Users\Mary\Documents\GitHub\media-streaming-data-pipeline\shop_oltp_p10.db
+2026-08-20 03:17:23 | INFO     | EXTRACT | Pulled 4000 raw watch-event records
+2026-08-20 03:17:23 | INFO     | VALIDATE | Beginning field-level validation and normalization
+2026-08-20 03:17:25 | INFO     | VALIDATE | 3797 records passed validation, 203 records quarantined
+2026-08-20 03:17:25 | INFO     | QUARANTINE | Wrote 203 isolated records to c:\Users\Mary\Documents\GitHub\media-streaming-data-pipeline\quarantine\invalid_playback_lengths.csv
+2026-08-20 03:17:25 | INFO     | ANONYMIZE | Hashing user_account_id with SHA-256 for 3797 records
+2026-08-20 03:17:25 | INFO     | TRANSFORM | Aggregating total daily streaming duration per genre
+2026-08-20 03:17:25 | INFO     | TRANSFORM | Produced 3483 daily-genre engagement rows across 1239 unique days
+2026-08-20 03:17:26 | INFO     | LOAD | Wrote Hive-partitioned dataset (partitioned by video_genre) to c:\Users\Mary\Documents\GitHub\media-streaming-data-pipeline\data\analytics\genre_engagement_rankings.parquet
+2026-08-20 03:17:26 | INFO     | PIPELINE | Run completed successfully in 2.76s
