@@ -1,0 +1,12 @@
+ The pipeline requires:
+  
+  Python v3
+  pandas v
+  pyarrow v
+  
+  The following modules are part of the Python Standard Library and do not require separate installation:
+  
+  sqlite3
+  logging
+  hashlib
+  os / pathlib, if used by the implementation
