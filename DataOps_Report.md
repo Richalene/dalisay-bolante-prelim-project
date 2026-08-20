@@ -72,9 +72,9 @@ The script should then perform the complete pipeline:
 
   The pipeline requires:
   
-  Python v3
-  pandas v
-  pyarrow v
+  Python v3.14
+  pandas v3.0.5
+  pyarrow v25.0.1
   
   The following modules are part of the Python Standard Library and do not require separate installation:
   
